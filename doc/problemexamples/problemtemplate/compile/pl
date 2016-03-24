@@ -1,0 +1,58 @@
+#!/bin/bash
+# ////////////////////////////////////////////////////////////////////////////////
+# //BOCA Online Contest Administrator
+# //    Copyright (C) 2003-2014 by BOCA System (bocasystem@gmail.com)
+# //
+# //    This program is free software: you can redistribute it and/or modify
+# //    it under the terms of the GNU General Public License as published by
+# //    the Free Software Foundation, either version 3 of the License, or
+# //    (at your option) any later version.
+# //
+# //    This program is distributed in the hope that it will be useful,
+# //    but WITHOUT ANY WARRANTY; without even the implied warranty of
+# //    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# //    GNU General Public License for more details.
+# //    You should have received a copy of the GNU General Public License
+# //    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+# ////////////////////////////////////////////////////////////////////////////////
+#Last modified: 21/august/2014 by cassio@ime.usp.br
+#
+# parameters are:
+# $1 source_file
+# $2 exe_file (default run.exe)
+# $3 timelimit
+# $4 maximum allowed memory (in MBytes, default 512M)
+#
+# the output of the submission should be directed to the standard output
+#
+# the return code show what happened (according to safeexec):
+# 0 ok
+# 1 compile error
+# 2 runtime error
+# 3 timelimit exceeded
+# 4 internal error
+# 5 parameter error
+# 6 internal error
+# 7 memory limit exceeded
+# 8 security threat
+# 9 runtime error
+# other_codes are unknown to boca: in this case BOCA will present the
+#                                  last line of standard output to the judge
+
+umask 0022
+
+if [ "$1" == "" ]; then
+    echo "parameter problem"
+    exit 43
+fi
+if [ ! -r "$1" ]; then
+    echo "$1 not found or it's not readable"
+    exit 44
+fi
+name="$1"
+if [ ! -r "$1" ]; then
+    echo "$1 not found or it's not readable"
+    exit 44
+fi
+cp "$name" "$exe"
+exit 0
