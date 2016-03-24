@@ -1,7 +1,9 @@
 ## helium (pt-BR)
 ### sistema de apoio a competicões de programação
 
-Desenvolvido com base no BOCA(ime.usp.br/~cassio/boca/) de cassiopc(https://github.com/cassiopc/) o helium vem corrigir praticas de programação hoje já obsoletas e trazer uma nova interface visando usabilidade e acessibilidade. O helium está sendo construido para um trabalho da disciplica SIN 422 - Qualidade de Software no qual será avaliado a ISO/IEC 9126(https://pt.wikipedia.org/wiki/ISO/IEC_9126).
+Desenvolvido com base no [BOCA](ime.usp.br/~cassio/boca/) de [cassiopc](https://github.com/cassiopc/) o helium vem corrigir praticas de programação hoje já obsoletas e trazer uma nova interface visando usabilidade e acessibilidade. O helium está sendo construido para um trabalho da disciplica SIN 422 - Qualidade de Software no qual será avaliado a [ISO/IEC 9126](https://pt.wikipedia.org/wiki/ISO/IEC_9126).
+
+runing boca: http://www.maratona.dacc.unir.br/ (open to register)
 
 ### versão:
 #### branches:
@@ -298,7 +300,7 @@ function computeHASH()
 ```
 
 ### Licença:
-GPL-3(https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3))
+[GPL-3](https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3))
 
 ## helium (en-US)
 ### online content administrator
